@@ -56,6 +56,9 @@ To call an existing acronym, all you have to do is insert:
 `\gls{call}`
 to your code.
 
+For the plural version of an acronym, you can use:
+'\glspl{call}'
+
 For example, you can create the acronym ANS.
 
 `\newacronym{ANS}{ANS}{American Nuclear Society}`
