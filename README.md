@@ -6,6 +6,8 @@
 This repository is intended as a template to standardize and ease the initialization process for posters. 
 While this template is geared towards an ARFC Member's poster, it can be adapted 
 to any individual's needs.
+> [!NOTE] 
+> The contents of this repository are licensed under the top-level CC-BY-4.0 with the exception of the better-poster/ folder and its contents, which are licensed separately by the license found therein.
 
 
 # ARFC Poster Manual
