@@ -2,7 +2,7 @@
 %%%% GNU General Public License v3.0
 %%%% Rafael Bailo
 %%%% https://github.com/rafaelbailo/betterposter-latex-template
-%%%% 
+%%%%
 %%%% Original design from Mike Morrison
 %%%% https://twitter.com/mikemorrison
 
@@ -16,7 +16,7 @@
 %%%% REQUIRED PACKAGES
 
 %% Paper size
-\RequirePackage{geometry} 
+\RequirePackage{geometry}
 \geometry{a0paper}
 
 %% Paper orientation
@@ -49,6 +49,17 @@
 \newcommand{\columnfontcolor}{black}
 \newcommand{\maincolumnbackgroundcolor}{imperialblue}
 \newcommand{\maincolumnfontcolor}{white}
+
+
+%% ORNL colors
+\definecolor{ornlgreen}{RGB}{0,120,51}
+
+%% UIUC colors
+\definecolor{uiucorange}{RGB}{255,95,5}
+\definecolor{uiucblue}{RGB}{19,41,75}
+\definecolor{uiucindustrial}{RGB}{29,88,167}
+\definecolor{uiucharvest}{RGB}{252,179,22}
+\definecolor{altgeldorange}{RGB}{200,65,19}
 
 %% Graphics
 \RequirePackage{graphicx}
@@ -149,7 +160,7 @@
 \begin{minipage}[t][
 \dimexpr 1.0\textheight-2.0#1\relax
 ][t]{
-\dimexpr 1.0\textwidth-2.0#2\relax		
+\dimexpr 1.0\textwidth-2.0#2\relax
 }
 {\fontsizestandard #3}
 \end{minipage}
@@ -166,7 +177,7 @@
 
 \vspace{1em}
 }
-\vfill	
+\vfill
 \begin{minipage}[t][0.25\textheight][b]{\textwidth}
 #2
 \end{minipage}
