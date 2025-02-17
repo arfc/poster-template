@@ -89,6 +89,19 @@
 \newcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
 \newcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
 
+
+%% Group poster size recommendation
+\DeclareOption{poster}{
+\geometry{paperwidth=30in}
+\geometry{paperheight=40in}
+\renewcommand{\fontsizestandard}{\fontsize{28.00}{44.00} \selectfont}
+\renewcommand{\fontsizemain}{\fontsize{117.00}{120.00} \selectfont}
+\renewcommand{\fontsizetitle}{\fontsize{67.00}{100.00} \selectfont}
+\renewcommand{\fontsizeauthor}{\fontsize{39.00}{34.00} \selectfont}
+\renewcommand{\fontsizesection}{\fontsize{41.00}{64.00} \selectfont}
+}
+
+
 \DeclareOption{a2paper}{
 \geometry{a2paper}
 \renewcommand{\fontsizestandard}{\fontsize{16.00}{25.00} \selectfont}
