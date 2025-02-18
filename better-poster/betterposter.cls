@@ -238,7 +238,7 @@
 
 %% Author command
 \renewcommand{\author}[1]{
-{\color{gray}\fontsizeauthor
+{\color{black}\fontsizeauthor
 #1
 }\\[-1.0em]
 
@@ -247,7 +247,7 @@
 %% Institution command
 \newcommand{\institution}[1]{
 \vspace{-1em}
-{\color{gray}
+{\color{black}
 #1
 }\\[-1.0em]
 
