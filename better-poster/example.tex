@@ -2,19 +2,19 @@
 %%%% GNU General Public License v3.0
 %%%% Rafael Bailo
 %%%% https://github.com/rafaelbailo/betterposter-latex-template
-%%%% 
+%%%%
 %%%% Original design from Mike Morrison
 %%%% https://twitter.com/mikemorrison
 
-\documentclass[a0paper,fleqn]{betterposter}
+\documentclass[poster,fleqn]{betterposter}
 
 %%%% Uncomment the following commands to customise the format
 
 %% Setting the width of columns
 % Left column
-%\setlength{\leftbarwidth}{0.25\paperwidth}
+\setlength{\leftbarwidth}{0.26\paperwidth}
 % Right column
-%\setlength{\rightbarwidth}{0.25\paperwidth}
+\setlength{\rightbarwidth}{0.26\paperwidth}
 
 %% Setting the column margins
 % Horizontal margin
@@ -52,10 +52,12 @@
 %\renewcommand{\maincolumnbackgroundcolor}{theory}
 %\renewcommand{\maincolumnbackgroundcolor}{methods}
 %\renewcommand{\maincolumnbackgroundcolor}{intervention}
+\renewcommand{\maincolumnbackgroundcolor}{uiucindustrial}
+
 % Font of main column
 %\renewcommand{\maincolumnfontcolor}{gray}
 
-\begin{document}	
+\begin{document}
 \betterposter{
 %%%%%%%% MAIN COLUMN
 
@@ -91,7 +93,7 @@
 \title{The Title}
 \author{Mike Morrison}
 \author{Rafael Bailo}
-\institution{Optional Institution Under Name}
+\institution{Advanced Reactors and Fuel Cycles Group, \\University of Illinois Urbana-Champaign}
 
 \section{Introduction}
 Here is an itemised list:
@@ -117,13 +119,13 @@ If $f$ is continuous on the closed interval $[a,b]$ and $F$ is the indefinite in
 \end{equation}
 
 \section{Conclusion}
-This is a great poster format!
+This is a great poster format! We cite: \cite{call_tag_techrep}.
 
 %% This fills the space between the content and the logo
 \vfill
 
 %% Institution logo
-\includegraphics[width=\textwidth]{img/logo}\\
+\includegraphics[width=0.2\textwidth]{img/UIUC_Logo.png}\\
 
 }{
 %%%%%%%% RIGHT COLUMN
@@ -143,5 +145,14 @@ Some cute ducklings:
 % Retrieved from: https://www.pexels.com/photo/selective-focus-photo-of-flock-of-ducklings-perching-on-gray-concrete-pavement-1300355/
 \includegraphics[width=\textwidth]{img/ducklings}
 \end{center}
+
+% Bibliography
+\bibliographystyle{unsrt}
+\bibliography{bibliography.bib}
+
+
+\section{Acknowledgments}
+This research is being performed using funding received from...
+
 }
 \end{document}

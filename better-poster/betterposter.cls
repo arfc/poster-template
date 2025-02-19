@@ -2,7 +2,7 @@
 %%%% GNU General Public License v3.0
 %%%% Rafael Bailo
 %%%% https://github.com/rafaelbailo/betterposter-latex-template
-%%%% 
+%%%%
 %%%% Original design from Mike Morrison
 %%%% https://twitter.com/mikemorrison
 
@@ -16,7 +16,7 @@
 %%%% REQUIRED PACKAGES
 
 %% Paper size
-\RequirePackage{geometry} 
+\RequirePackage{geometry}
 \geometry{a0paper}
 
 %% Paper orientation
@@ -50,6 +50,17 @@
 \newcommand{\maincolumnbackgroundcolor}{imperialblue}
 \newcommand{\maincolumnfontcolor}{white}
 
+
+%% ORNL colors
+\definecolor{ornlgreen}{RGB}{0,120,51}
+
+%% UIUC colors
+\definecolor{uiucorange}{RGB}{255,95,5}
+\definecolor{uiucblue}{RGB}{19,41,75}
+\definecolor{uiucindustrial}{RGB}{29,88,167}
+\definecolor{uiucharvest}{RGB}{252,179,22}
+\definecolor{altgeldorange}{RGB}{200,65,19}
+
 %% Graphics
 \RequirePackage{graphicx}
 
@@ -77,6 +88,19 @@
 \newcommand{\fontsizetitle}{\fontsize{80.00}{120.00} \selectfont}
 \newcommand{\fontsizeauthor}{\fontsize{48.00}{68.00} \selectfont}
 \newcommand{\fontsizesection}{\fontsize{48.00}{68.00} \selectfont}
+
+
+%% Group poster size recommendation
+\DeclareOption{poster}{
+\geometry{paperwidth=30in}
+\geometry{paperheight=40in}
+\renewcommand{\fontsizestandard}{\fontsize{28.00}{44.00} \selectfont}
+\renewcommand{\fontsizemain}{\fontsize{117.00}{120.00} \selectfont}
+\renewcommand{\fontsizetitle}{\fontsize{67.00}{100.00} \selectfont}
+\renewcommand{\fontsizeauthor}{\fontsize{39.00}{34.00} \selectfont}
+\renewcommand{\fontsizesection}{\fontsize{41.00}{64.00} \selectfont}
+}
+
 
 \DeclareOption{a2paper}{
 \geometry{a2paper}
@@ -149,7 +173,7 @@
 \begin{minipage}[t][
 \dimexpr 1.0\textheight-2.0#1\relax
 ][t]{
-\dimexpr 1.0\textwidth-2.0#2\relax		
+\dimexpr 1.0\textwidth-2.0#2\relax
 }
 {\fontsizestandard #3}
 \end{minipage}
@@ -166,7 +190,7 @@
 
 \vspace{1em}
 }
-\vfill	
+\vfill
 \begin{minipage}[t][0.25\textheight][b]{\textwidth}
 #2
 \end{minipage}
@@ -214,7 +238,7 @@
 
 %% Author command
 \renewcommand{\author}[1]{
-{\color{gray}\fontsizeauthor
+{\color{black}\fontsizeauthor
 #1
 }\\[-1.0em]
 
@@ -223,7 +247,7 @@
 %% Institution command
 \newcommand{\institution}[1]{
 \vspace{-1em}
-{\color{gray}
+{\color{black}
 #1
 }\\[-1.0em]
 
